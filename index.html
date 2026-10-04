@@ -1,0 +1,609 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aux plaisirs d'Autrefois</title>
+<meta name="description" content="Finesse en gourmandises maison ! Pralines, nougat tendre et pain d'épices au miel de montagne, faits maison à Clermont-Ferrand depuis 1995. Sélection locale (63), sur les marchés.">
+<meta property="og:title" content="Aux plaisirs d'Autrefois">
+<meta property="og:description" content="Pralines, pains d'épices et nougat tendre. Sélection locale et faite maison (63).">
+<meta property="og:image" content="https://auxplaisirsdautrefois.github.io/images/triporteur-marche.jpg">
+<meta property="og:url" content="https://auxplaisirsdautrefois.github.io/">
+<meta property="og:type" content="website">
+<link rel="canonical" href="https://auxplaisirsdautrefois.github.io/">
+<link rel="icon" href="images/enseigne.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,500;0,700;0,800;1,500&family=Alegreya+Sans:wght@400;500;700&family=Alegreya+Sans+SC:wght@500;700&display=swap">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Store",
+  "name": "Aux plaisirs d'Autrefois",
+  "slogan": "Finesse en gourmandises maison !",
+  "description": "Confiserie artisanale : pralines, nougat tendre au miel de montagne, pain d'épices au miel. Sélection locale et faite maison (63).",
+  "foundingDate": "1995",
+  "telephone": "+33767045831",
+  "image": "https://auxplaisirsdautrefois.github.io/images/triporteur-marche.jpg",
+  "url": "https://auxplaisirsdautrefois.github.io/",
+  "areaServed": "Clermont-Ferrand",
+  "address": { "@type": "PostalAddress", "addressLocality": "Clermont-Ferrand", "addressCountry": "FR" },
+  "sameAs": ["https://www.instagram.com/auxplaisirsdautrefois/"]
+}
+</script>
+<style>
+/* Mise en page : l'enseigne bordeaux et crème en ouverture, sous l'auvent rouge des stands ;
+   puis l'étal (produits), l'atelier, les marchés en photos, et la chaîne des Puys en pied de page. */
+:root {
+  --paper:    #FBF6EC;  /* crème de l'enseigne, éclairci */
+  --surface:  #F3E9D6;
+  --ink:      #2B1A17;
+  --muted:    #6E5A52;
+  --bordeaux: #7A1D18;  /* fond de l'enseigne */
+  --red:      #B8162C;  /* bâche des stands, bandeau du triporteur */
+  --gold:     #F2C94C;  /* pancartes jaunes de l'étal */
+  --line:     #E2D4BC;
+  --sign-bg:  #7A1D18;
+  --sign-fg:  #F5E9CF;
+  --awning-light: #F5E9CF;
+  --accent-text: #7A1D18;
+
+  --f-display: "Alegreya", "Iowan Old Style", Georgia, serif;
+  --f-body: "Alegreya Sans", "Segoe UI", Arial, sans-serif;
+  --f-label: "Alegreya Sans SC", "Alegreya Sans", Arial, sans-serif;
+
+  --step--1: 0.9rem;
+  --step-0: 1.125rem;
+  --step-1: 1.4rem;
+  --step-2: 1.9rem;
+  --step-3: clamp(2.2rem, 4.6vw, 3.2rem);
+  --step-4: clamp(2.6rem, 6.5vw, 4.4rem);
+
+  --gutter: clamp(16px, 4vw, 40px);
+  --maxw: 1160px;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #1E1513; --surface: #2A1E1B; --ink: #F5E9CF; --muted: #C2B09C;
+    --bordeaux: #E07A6E; --red: #D8394C; --gold: #F2C94C; --line: #44322D;
+    --accent-text: #F0A094;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #1E1513; --surface: #2A1E1B; --ink: #F5E9CF; --muted: #C2B09C;
+  --bordeaux: #E07A6E; --red: #D8394C; --gold: #F2C94C; --line: #44322D;
+  --accent-text: #F0A094;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0; background: var(--paper); color: var(--ink);
+  font: 400 var(--step-0)/1.6 var(--f-body); -webkit-font-smoothing: antialiased;
+}
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 3px solid var(--gold); outline-offset: 3px; border-radius: 4px; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 800; line-height: 1.1; text-wrap: balance; margin: 0; }
+p, figure { margin: 0; }
+
+.wrap { max-width: var(--maxw); margin-inline: auto; padding-inline: var(--gutter); }
+.label { font-family: var(--f-label); font-weight: 700; font-size: var(--step--1); letter-spacing: 0.08em; color: var(--accent-text); }
+
+/* Filet orné de l'enseigne : trait, losange, trait */
+.rule { display: flex; align-items: center; gap: 10px; color: currentColor; }
+.rule::before, .rule::after { content: ""; flex: 1; border-top: 2px solid currentColor; }
+.rule span { width: 8px; height: 8px; rotate: 45deg; border: 2px solid currentColor; }
+
+/* ---------- Auvent des stands ---------- */
+.awning {
+  height: 58px;
+  background: repeating-linear-gradient(90deg, var(--red) 0 40px, var(--awning-light) 40px 80px);
+  -webkit-mask:
+    linear-gradient(#000 0 0) top / 100% 38px no-repeat,
+    radial-gradient(circle 20px at 20px 0, #000 97%, transparent 100%) 0 38px / 40px 20px repeat-x;
+          mask:
+    linear-gradient(#000 0 0) top / 100% 38px no-repeat,
+    radial-gradient(circle 20px at 20px 0, #000 97%, transparent 100%) 0 38px / 40px 20px repeat-x;
+}
+
+.topbar {
+  position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10;
+  background: color-mix(in srgb, var(--paper) 93%, transparent); backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.topbar .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; padding-block: 10px; flex-wrap: wrap; }
+.brand { display: inline-flex; align-items: center; gap: 10px; font-family: var(--f-display); font-weight: 800; font-size: 1.25rem; text-decoration: none; }
+.brand__mark { width: 34px; height: 34px; border-radius: 4px; background: var(--sign-bg); color: var(--sign-fg); display: grid; place-items: center; }
+.brand__mark svg { width: 26px; height: 26px; }
+.nav { display: flex; gap: 6px 20px; flex-wrap: wrap; align-items: center; }
+.nav a { text-decoration: none; font-weight: 500; font-size: 1rem; }
+.nav a:hover { color: var(--accent-text); }
+
+/* ---------- Ouverture ---------- */
+.hero .wrap {
+  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: clamp(28px, 5vw, 64px);
+  align-items: center; padding-block: clamp(32px, 6vw, 72px);
+}
+.hero__text { display: grid; gap: 24px; min-width: 0; }
+
+.sign {
+  background: var(--sign-bg); color: var(--sign-fg); padding: 12px; border-radius: 3px;
+  box-shadow: 0 30px 60px -30px rgba(60, 10, 8, .55);
+}
+.sign__frame {
+  border: 2px solid currentColor; outline: 1px solid currentColor; outline-offset: -7px;
+  padding: clamp(24px, 4vw, 40px) clamp(20px, 4vw, 44px);
+  display: grid; justify-items: center; text-align: center; gap: 14px;
+}
+.sign__canes { width: clamp(84px, 12vw, 120px); height: auto; }
+.sign h1 { font-size: var(--step-4); font-weight: 700; line-height: 1.02; }
+.sign .rule { width: min(100%, 26rem); }
+.sign__tagline { font-family: var(--f-display); font-weight: 700; font-size: var(--step-1); line-height: 1.25; }
+
+.hero__lede { font-size: var(--step-1); line-height: 1.45; color: var(--muted); max-width: 36ch; }
+.hero__lede strong { color: var(--ink); font-weight: 700; }
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; padding: 11px 20px; border-radius: 999px;
+  font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid var(--ink);
+  transition: transform .15s ease;
+}
+.btn:hover { transform: translateY(-2px); }
+.btn--solid { background: var(--sign-bg); border-color: var(--sign-bg); color: var(--sign-fg); }
+.btn svg { width: 18px; height: 18px; flex: none; }
+
+.hero__photo { position: relative; min-width: 0; }
+.hero__photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 4px; }
+.pin {
+  position: absolute; left: -14px; bottom: 28px; max-width: 15rem;
+  background: var(--gold); color: #2B1A17; padding: 10px 14px; rotate: -3deg;
+  font-weight: 700; line-height: 1.3; font-size: 1rem; box-shadow: 0 8px 18px -8px rgba(0,0,0,.4);
+}
+@media (prefers-reduced-motion: no-preference) {
+  .sign { animation: hang 900ms cubic-bezier(.2,.8,.2,1) both; transform-origin: 50% 0; }
+  @keyframes hang { from { rotate: -2.5deg; } 55% { rotate: 1deg; } to { rotate: 0deg; } }
+}
+
+/* ---------- Sections ---------- */
+section { scroll-margin-top: 80px; }
+.section { padding-block: clamp(56px, 8vw, 104px); }
+.section--alt { background: var(--surface); }
+.section__head { display: grid; gap: 10px; max-width: 62ch; margin-bottom: clamp(24px, 4vw, 44px); }
+.section__head h2 { font-size: var(--step-3); }
+.section__head p { color: var(--muted); }
+
+/* Filtres */
+.filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 24px; }
+.chip {
+  font: 700 1rem var(--f-body); padding: 7px 16px; border-radius: 999px; cursor: pointer;
+  background: transparent; color: var(--ink); border: 1.5px solid var(--line);
+}
+.chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+.chip:hover { border-color: var(--ink); }
+
+/* Produits */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr)); gap: clamp(16px, 2.5vw, 28px); }
+.card { display: grid; grid-template-rows: auto 1fr; background: var(--paper); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; min-width: 0; }
+.card__media { aspect-ratio: 4 / 3; max-width: 100%; background: var(--surface); display: grid; place-items: center; position: relative; overflow: hidden; }
+.card__media img { width: 100%; height: 100%; object-fit: cover; }
+.card__media svg { width: 46%; height: auto; }
+.card__tag {
+  position: absolute; top: 12px; left: 12px; font-family: var(--f-label); font-weight: 700; font-size: 0.85rem;
+  letter-spacing: 0.06em; padding: 3px 10px; border-radius: 3px; background: var(--sign-bg); color: var(--sign-fg); box-shadow: 0 0 0 1.5px var(--sign-fg);
+}
+.card__tag[data-type="local"] { background: var(--gold); color: #2B1A17; }
+.card__tag[data-type="selection"] { background: var(--paper); color: var(--ink); border: 1px solid var(--line); }
+.card__dispo { position: absolute; bottom: 12px; left: 12px; font-weight: 700; font-size: 0.85rem; padding: 3px 10px; border-radius: 3px; background: var(--paper); color: var(--ink); }
+.card__body { padding: 18px 22px 22px; display: grid; gap: 8px; align-content: start; }
+.card__body h3 { font-size: var(--step-1); }
+.card__body p { color: var(--muted); }
+.card__variants { list-style: none; margin: 4px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+.card__variants li { font-size: 0.92rem; font-weight: 500; padding: 2px 10px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+
+/* illustrations (produits sans photo) */
+.i-ink    { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+.i-cream  { fill: var(--paper); stroke: var(--ink); stroke-width: 2; }
+.i-red    { fill: var(--red); }
+.i-gold   { fill: var(--gold); }
+.i-brown  { fill: #8C5427; }
+
+/* Paniers gourmands */
+.baskets { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(24px, 5vw, 64px); align-items: center; }
+.baskets__text { display: grid; gap: 16px; min-width: 0; }
+.baskets__text h2 { font-size: var(--step-3); }
+.baskets__text p { color: var(--muted); max-width: 44ch; }
+.baskets__photos { display: grid; grid-template-columns: 1.2fr 1fr; grid-template-rows: 1fr 1fr; gap: 14px; min-width: 0; aspect-ratio: 4 / 3; max-width: 100%; }
+.baskets__photos figure { min-height: 0; }
+.baskets__photos figure:first-child { grid-row: span 2; }
+.baskets__photos figure:first-child img { object-position: 50% 100%; }
+.baskets__photos img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 75%; border-radius: 4px; }
+
+/* Atelier */
+.craft { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(20px, 3vw, 36px); }
+.craft figure { display: grid; gap: 14px; align-content: start; min-width: 0; }
+.craft img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 4px; }
+.craft h3 { font-size: var(--step-1); }
+.craft figcaption { display: grid; gap: 6px; }
+.craft figcaption p { color: var(--muted); }
+
+/* Galerie */
+.gallery { columns: 3 260px; column-gap: 16px; }
+.gallery figure { break-inside: avoid; margin-bottom: 16px; position: relative; }
+.gallery img { width: 100%; border-radius: 4px; }
+.gallery figcaption {
+  position: absolute; left: 10px; bottom: 10px; background: var(--paper); color: var(--ink);
+  font-weight: 700; font-size: 0.92rem; padding: 3px 10px; border-radius: 3px;
+}
+
+/* Histoire */
+.story { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(32px, 6vw, 80px); align-items: start; }
+.story__intro { display: grid; gap: 14px; }
+.story__intro h2 { font-size: var(--step-3); }
+.story__intro p { color: var(--muted); max-width: 46ch; }
+.timeline { list-style: none; margin: 0; padding: 0; display: grid; }
+.timeline li { display: grid; grid-template-columns: 6rem 1fr; gap: 20px; padding-block: 18px; border-bottom: 1px solid var(--line); }
+.timeline li:first-child { border-top: 1px solid var(--line); }
+.timeline .year { font-family: var(--f-display); font-weight: 800; font-size: var(--step-2); color: var(--accent-text); line-height: 1; font-variant-numeric: lining-nums tabular-nums; }
+.timeline h3 { font-family: var(--f-body); font-weight: 700; font-size: var(--step-0); margin-bottom: 2px; }
+.timeline p { color: var(--muted); }
+
+/* Nous trouver */
+.find { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(24px, 4vw, 56px); align-items: start; }
+.find__text { display: grid; gap: 18px; min-width: 0; }
+.find__text h2 { font-size: var(--step-3); }
+.find__text p { color: var(--muted); max-width: 48ch; }
+.find__text img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 4px; }
+.board { background: var(--sign-bg); color: var(--sign-fg); padding: 10px; border-radius: 3px; min-width: 0; }
+.board__frame { border: 2px solid currentColor; padding: clamp(20px, 4vw, 32px); display: grid; gap: 16px; }
+.board h3 { font-size: var(--step-1); }
+.board ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; }
+.board li { display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap; border-bottom: 1px dashed color-mix(in srgb, var(--sign-fg) 40%, transparent); padding-bottom: 10px; }
+.board li span:last-child { font-weight: 700; }
+.board p { font-size: 1rem; }
+.board a { color: var(--sign-fg); }
+.phone { font-family: var(--f-display); font-weight: 800; font-size: var(--step-2); letter-spacing: 0.02em; font-variant-numeric: lining-nums; text-decoration: none; user-select: all; }
+
+/* Pied de page */
+.puys { display: block; width: 100%; height: clamp(56px, 9vw, 110px); }
+.puys path { fill: var(--sign-bg); }
+footer { background: var(--sign-bg); color: var(--sign-fg); }
+footer .wrap { display: grid; gap: 24px; padding-block: 8px 40px; }
+.foot__row { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; align-items: end; }
+.foot__brand { font-family: var(--f-display); font-weight: 800; font-size: var(--step-2); }
+.foot__links { display: grid; gap: 4px; justify-items: start; }
+footer a { color: var(--sign-fg); }
+details.legal { font-size: 0.95rem; border-top: 1px solid color-mix(in srgb, var(--sign-fg) 30%, transparent); padding-top: 14px; }
+details.legal summary { cursor: pointer; font-weight: 700; }
+details.legal dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 20px; margin: 14px 0 0; }
+details.legal dt { font-weight: 700; }
+details.legal dd { margin: 0; min-width: 0; }
+
+@media (max-width: 900px) {
+  .hero .wrap, .story, .find, .baskets { grid-template-columns: 1fr; }
+  .hero__photo { max-width: 520px; }
+  .craft { grid-template-columns: 1fr 1fr; }
+  .craft figure:last-child { grid-column: span 2; }
+  .craft figure:last-child img { aspect-ratio: 16 / 9; }
+}
+@media (max-width: 560px) {
+  .craft { grid-template-columns: 1fr; }
+  .craft figure:last-child { grid-column: auto; }
+  .craft img, .craft figure:last-child img { aspect-ratio: 4 / 3; }
+  .timeline li { grid-template-columns: 1fr; gap: 4px; }
+  details.legal dl { grid-template-columns: 1fr; }
+  .pin { left: 10px; }
+  .nav { gap: 4px 14px; }
+}
+</style>
+</head>
+<body>
+
+<!-- Les deux sucres d'orge croisés de l'enseigne -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="canes" viewBox="0 0 120 100">
+    <g id="cane" fill="none" stroke-linecap="round">
+      <path d="M92 94 L42 30 A11 11 0 0 0 24.6 43.6 L28.3 48.3" stroke="currentColor" stroke-width="11"/>
+      <path d="M92 94 L42 30 A11 11 0 0 0 24.6 43.6 L28.3 48.3" stroke="var(--sign-bg)" stroke-width="6" stroke-dasharray="5 6" stroke-linecap="butt"/>
+    </g>
+    <use href="#cane" transform="translate(120 0) scale(-1 1)"/>
+  </symbol>
+</svg>
+
+<div class="awning" aria-hidden="true"></div>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#">
+      <span class="brand__mark" aria-hidden="true"><svg><use href="#canes"/></svg></span>
+      Aux plaisirs d'Autrefois
+    </a>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#produits">Produits</a>
+      <a href="#paniers">Paniers</a>
+      <a href="#atelier">Fait maison</a>
+      <a href="#histoire">Histoire</a>
+      <a href="#marches">Marchés</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero__text">
+        <div class="sign">
+          <div class="sign__frame">
+            <svg class="sign__canes" viewBox="0 0 120 100" aria-hidden="true"><use href="#canes"/></svg>
+            <h1>Aux plaisirs d'Autrefois</h1>
+            <div class="rule" aria-hidden="true"><span></span></div>
+            <p class="sign__tagline">Finesse en Gourmandises maison&nbsp;!</p>
+          </div>
+        </div>
+        <p class="hero__lede"><strong>Pralines, pains d'épices et nougat tendre</strong> au miel de montagne. Sélection locale et faite maison (63), à Clermont-Ferrand depuis 1995.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="#produits">Voir les produits</a>
+          <a class="btn" href="tel:+33767045831">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z" fill="currentColor"/></svg>
+            07 67 04 58 31
+          </a>
+        </div>
+      </div>
+      <figure class="hero__photo">
+        <img src="images/triporteur-marche.jpg" alt="Le triporteur blanc d'Aux plaisirs d'Autrefois, garni de pralines, nougats et pains d'épices, sur un marché" width="900" height="1200">
+        <figcaption class="pin">Le triporteur, sur les marchés du Puy-de-Dôme</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="produits" class="section section--alt">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="label">Sur l'étal</p>
+        <h2>Les produits</h2>
+        <p>Des confiseries faites maison, des produits du Puy-de-Dôme, et quelques douceurs choisies pour les fêtes.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrer les produits">
+        <button class="chip" id="f-tout" type="button" data-filter="tout" aria-pressed="true">Tout</button>
+        <button class="chip" id="f-maison" type="button" data-filter="maison" aria-pressed="false">Fait maison</button>
+        <button class="chip" id="f-local" type="button" data-filter="local" aria-pressed="false">Produits locaux</button>
+      </div>
+      <div class="grid" id="grille"></div>
+    </div>
+  </section>
+
+  <section id="paniers" class="section">
+    <div class="wrap baskets">
+      <div class="baskets__text">
+        <p class="label">Pendant les fêtes</p>
+        <h2>Paniers gourmands</h2>
+        <p>Des paniers en osier garnis de pralines, nougats et pains d'épices maison, avec des produits locaux du Puy-de-Dôme. Artisanal, fait maison et local (63).</p>
+        <p>Proposés uniquement pendant les fêtes. Renseignements sur le stand ou par téléphone.</p>
+        <div class="actions">
+          <a class="btn btn--solid" href="tel:+33767045831">Appeler le 07 67 04 58 31</a>
+        </div>
+      </div>
+      <div class="baskets__photos">
+        <figure><img src="images/panier-gourmand.jpg" alt="Panier gourmand en osier sous cellophane, noué d'un ruban doré" loading="lazy" width="1000" height="1000"></figure>
+        <figure><img src="images/paniers-osier.jpg" alt="Deux paniers en osier garnis de nougat, de pots et de sachets de pralines" loading="lazy" width="1000" height="1000"></figure>
+        <figure><img src="images/panier-gourmand-2.jpg" alt="Panier gourmand emballé, prêt à offrir" loading="lazy" width="1000" height="750"></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="atelier" class="section section--alt">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="label">Le savoir-faire</p>
+        <h2>Fait maison, comme autrefois</h2>
+        <p>Du sucre, du miel de montagne, des amandes, des noisettes. Peu d'ingrédients, préparés en petites quantités pour arriver frais sur l'étal.</p>
+      </div>
+      <div class="craft">
+        <figure>
+          <img src="images/pralines-refroidissement.jpg" alt="Pralines tout juste caramélisées, étalées sur une table en inox pour refroidir" loading="lazy" width="900" height="1200">
+          <figcaption><h3>Les pralines</h3><p>Tout juste caramélisées, elles sont étalées pour refroidir avant d'être mises en sachet.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="images/nougat-decoupe.jpg" alt="Plaque de nougat blanc aux amandes découpée au couteau sur un plan de marbre" loading="lazy" width="763" height="1000">
+          <figcaption><h3>Le nougat tendre</h3><p>Agrémenté d'amandes ou de noisettes, à 60&nbsp;% de miel de montagne, découpé au couteau.</p></figcaption>
+        </figure>
+        <figure>
+          <img src="images/pain-epices.jpg" alt="Pains d'épices au miel posés sur de la paille" loading="lazy" width="660" height="540">
+          <figcaption><h3>Le pain d'épices</h3><p>60&nbsp;% de miel, pour un pain d'épices moelleux et parfumé.</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="section__head">
+        <p class="label">En images</p>
+        <h2>Sur les marchés et les fêtes</h2>
+        <p>Marchés de producteurs, marchés de Noël, fêtes de village : on reconnaît le stand à ses banderoles « Pralines, nougats, pains d'épices maison et local ».</p>
+      </div>
+      <div class="gallery">
+        <figure><img src="images/stand-pralines.jpg" alt="Stand sous tente rouge avec banderoles Pralines, nougats, pains d'épices maison et local" loading="lazy" width="1400" height="1050"><figcaption>Marché de plein air</figcaption></figure>
+        <figure><img src="images/marche-noel.jpg" alt="Stand décoré pour Noël, garni de pains d'épices, nougats et sachets de pralines" loading="lazy" width="911" height="1000"><figcaption>Marché de Noël</figcaption></figure>
+        <figure><img src="images/fete-medievale.jpg" alt="Stand à la tente rouge avec un bouffon costumé et le confiseur en tenue d'époque" loading="lazy" width="750" height="1000"><figcaption>Fête médiévale</figcaption></figure>
+        <figure><img src="images/etal-produits.jpg" alt="Étal avec pains d'épices sur paille, sachets de pralines, nougats et pots de miel" loading="lazy" width="1600" height="979"><figcaption>L'étal</figcaption></figure>
+        <figure><img src="images/stand-marche.jpg" alt="Stand de marché sous parasol rouge, avec pralines, nougats et pains d'épices" loading="lazy" width="1400" height="1050"><figcaption>Jour de marché</figcaption></figure>
+        <figure><img src="images/stand-village.jpg" alt="Stand jaune Pralines devant un mur de pierre, dans un village" loading="lazy" width="1400" height="1050"><figcaption>Fête de village</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="histoire" class="section section--alt">
+    <div class="wrap story">
+      <div class="story__intro">
+        <p class="label">L'histoire</p>
+        <h2>Trente ans de douceurs clermontoises</h2>
+        <p>Vous avez peut-être connu la confiserie au kiosque de la place de Jaude. Aujourd'hui, elle se retrouve sur les marchés, avec le triporteur et les mêmes recettes.</p>
+      </div>
+      <ol class="timeline">
+        <li><span class="year">1995</span><div><h3>La confiserie voit le jour</h3><p>Premières pralines, premiers nougats, à Clermont-Ferrand.</p></div></li>
+        <li><span class="year">2006</span><div><h3>Le kiosque de la place de Jaude</h3><p>Pendant quinze ans, le kiosque n°4 accueille les Clermontois au cœur de la ville.</p></div></li>
+        <li><span class="year">2021</span><div><h3>Retour aux marchés</h3><p>Le kiosque ferme ses portes. La confiserie continue sur les marchés et les fêtes.</p></div></li>
+        <li><span class="year">Auj.</span><div><h3>Le triporteur</h3><p>Un étal sur trois roues, qui emmène les gourmandises d'un marché à l'autre.</p></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="marches" class="section">
+    <div class="wrap find">
+      <div class="find__text">
+        <p class="label">Où le trouver</p>
+        <h2>Cherchez le triporteur</h2>
+        <p>Les confiseries sont vendues sur les marchés de Clermont-Ferrand et du Puy-de-Dôme. Les lieux et les jours sont annoncés sur Instagram.</p>
+        <img src="images/triporteur-etal.jpg" alt="Le triporteur ouvert, ses étagères garnies, avec le bandeau Sélection locale et faite maison (63)" loading="lazy" width="1400" height="1050">
+      </div>
+      <div class="board">
+        <div class="board__frame">
+          <h3>Cette semaine sur l'étal</h3>
+          <ul id="marches-liste"></ul>
+          <p>Fruits confits : à Noël ou sur commande.<br>Paniers gourmands : pendant les fêtes.<br>Miel d'Auvergne : vente exceptionnelle.</p>
+          <div class="rule" aria-hidden="true"><span></span></div>
+          <p>Pour une commande ou une question :</p>
+          <a class="phone" href="tel:+33767045831">07 67 04 58 31</a>
+          <p><a href="https://www.instagram.com/auxplaisirsdautrefois/" target="_blank" rel="noopener">Instagram : @auxplaisirsdautrefois</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<svg class="puys" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+  <!-- La chaîne des Puys ; le plus haut sommet est le puy de Dôme -->
+  <path d="M0 120 L0 96 C60 92 90 70 130 72 C170 74 190 94 240 92 C290 90 310 60 360 58 C400 57 420 84 470 86
+           C520 88 545 40 600 22 C640 10 660 14 690 30 C720 46 740 82 790 84 C840 86 860 64 900 62
+           C945 60 965 88 1010 88 C1060 88 1080 70 1120 70 C1160 70 1180 86 1200 88 L1200 120 Z"/>
+</svg>
+<footer>
+  <div class="wrap">
+    <div class="foot__row">
+      <div>
+        <div class="foot__brand">Aux plaisirs d'Autrefois</div>
+        <p>Finesse en Gourmandises maison ! · Clermont-Ferrand (63)</p>
+      </div>
+      <div class="foot__links">
+        <a href="tel:+33767045831">07 67 04 58 31</a>
+        <a href="https://www.instagram.com/auxplaisirsdautrefois/" target="_blank" rel="noopener">@auxplaisirsdautrefois</a>
+      </div>
+    </div>
+    <details class="legal">
+      <summary>Mentions légales</summary>
+      <dl>
+        <dt>Éditeur</dt><dd>Abdarahim Habibi, entrepreneur individuel, « Aux plaisirs d'Autrefois »</dd>
+        <dt>Adresse</dt><dd>178 rue Verlaine, 63100 Clermont-Ferrand</dd>
+        <dt>Téléphone</dt><dd>07 67 04 58 31</dd>
+        <dt>SIRET</dt><dd>402 104 228 00042</dd>
+        <dt>Hébergeur</dt><dd>GitHub, Inc. (GitHub Pages), 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis</dd>
+      </dl>
+    </details>
+  </div>
+</footer>
+
+<!-- Illustrations pour les produits sans photo -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="il-miel" viewBox="0 0 120 120">
+    <rect class="i-ink i-brown" x="38" y="14" width="44" height="14" rx="3"/>
+    <path class="i-gold" d="M32 30 L88 30 C94 30 96 36 96 42 L96 100 C96 106 92 110 86 110 L34 110 C28 110 24 106 24 100 L24 42 C24 36 26 30 32 30 Z"/>
+    <path class="i-ink" d="M32 30 L88 30 C94 30 96 36 96 42 L96 100 C96 106 92 110 86 110 L34 110 C28 110 24 106 24 100 L24 42 C24 36 26 30 32 30 Z"/>
+    <rect class="i-cream" x="34" y="54" width="52" height="32" rx="2"/>
+    <path class="i-ink" d="M60 60 l7 4 v8 l-7 4 l-7 -4 v-8 Z"/>
+  </symbol>
+  <symbol id="il-tartiner" viewBox="0 0 120 120">
+    <path class="i-ink" d="M78 8 L66 54" style="stroke-width:5"/>
+    <rect class="i-ink i-red" x="30" y="30" width="60" height="12" rx="3"/>
+    <path class="i-cream" d="M28 44 L92 44 L92 104 C92 108 89 110 86 110 L34 110 C31 110 28 108 28 104 Z"/>
+    <path style="fill:#5A3418" d="M30 62 C44 56 56 66 70 60 C80 56 86 60 90 62 L90 104 C90 107 88 108 86 108 L34 108 C32 108 30 107 30 104 Z"/>
+    <path class="i-ink" d="M28 44 L92 44 L92 104 C92 108 89 110 86 110 L34 110 C31 110 28 108 28 104 Z"/>
+    <rect class="i-cream" x="40" y="72" width="40" height="22" rx="2"/>
+  </symbol>
+  <symbol id="il-confits" viewBox="0 0 120 120">
+    <circle cx="48" cy="58" r="30" style="fill:#E58A1F"/>
+    <circle cx="48" cy="58" r="22" style="fill:#F4B84A"/>
+    <path class="i-ink" d="M48 58 L48 36 M48 58 L67 47 M48 58 L67 69 M48 58 L48 80 M48 58 L29 69 M48 58 L29 47"/>
+    <circle class="i-ink" cx="48" cy="58" r="30"/>
+    <path class="i-ink" d="M88 66 C88 52 96 44 104 40 M88 66 C86 56 80 50 74 48"/>
+    <circle class="i-red" cx="86" cy="80" r="11"/><circle cx="72" cy="94" r="10" style="fill:#6B8E3A"/>
+    <circle class="i-ink" cx="86" cy="80" r="11"/><circle class="i-ink" cx="72" cy="94" r="10"/>
+  </symbol>
+</svg>
+
+<script>
+/*
+  ===== PRODUITS =====
+  photo : chemin d'une image du dossier images/ (laisser "" pour afficher l'illustration illus).
+  type  : "maison" (fait maison), "local" (produit local) ou "selection" (ni l'un ni l'autre).
+*/
+const PRODUITS = [
+  { nom: "Pralines", type: "maison", photo: "images/pralines-gros-plan.jpg",
+    alt: "Gros plan sur des amandes pralinées rouges et brillantes",
+    desc: "Caramélisées maison et vendues en sachet.",
+    variantes: ["Amandes", "Noisettes", "Cacahuètes"] },
+  { nom: "Nougat tendre", type: "maison", photo: "images/nougat-plaques.jpg",
+    alt: "Plaques de nougat blanc dans un bac, prêtes à être découpées",
+    desc: "Agrémenté d'amandes ou de noisettes, à 60 % de miel de montagne.",
+    variantes: ["Amandes", "Noisettes"] },
+  { nom: "Pain d'épices au miel", type: "maison", photo: "images/pain-epices.jpg",
+    alt: "Pains d'épices posés sur de la paille",
+    desc: "Moelleux et parfumé, avec 60 % de miel.",
+    variantes: ["200 g", "400 g"] },
+  { nom: "Pâtes à tartiner", type: "maison", photo: "", illus: "tartiner",
+    desc: "Préparées en petites quantités, en deux recettes.",
+    variantes: ["Beurre de cacahuètes", "Chocolat, noisettes et amandes"] },
+  { nom: "Miel d'Auvergne", type: "local", photo: "", illus: "miel",
+    desc: "Du miel de montagne d'Auvergne, en pot.",
+    dispo: "Vente exceptionnelle" },
+  { nom: "Fruits confits", type: "selection", photo: "", illus: "confits",
+    desc: "Une sélection de fruits confits pour les fêtes.",
+    dispo: "Noël · sur commande" },
+];
+
+/*
+  ===== MARCHÉS =====
+  Exemple : { lieu: "Marché Saint-Joseph", quand: "mardi, 7h–13h" }
+  Laisser vide pour renvoyer vers Instagram.
+*/
+const MARCHES = [];
+
+const TAGS = { maison: "Fait maison", local: "Produit local", selection: "Sélection" };
+
+function carte(p) {
+  const media = p.photo
+    ? `<img src="${p.photo}" alt="${p.alt || p.nom}" loading="lazy">`
+    : `<svg role="img" aria-label="${p.nom}"><use href="#il-${p.illus}"/></svg>`;
+  return `<article class="card" data-type="${p.type}">
+    <div class="card__media">${media}<span class="card__tag" data-type="${p.type}">${TAGS[p.type]}</span>${p.dispo ? `<span class="card__dispo">${p.dispo}</span>` : ""}</div>
+    <div class="card__body">
+      <h3>${p.nom}</h3>
+      <p>${p.desc}</p>
+      ${p.variantes ? `<ul class="card__variants">${p.variantes.map(v => `<li>${v}</li>`).join("")}</ul>` : ""}
+    </div>
+  </article>`;
+}
+
+const grille = document.getElementById("grille");
+grille.innerHTML = PRODUITS.map(carte).join("");
+
+document.querySelectorAll(".chip").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const f = btn.dataset.filter;
+    document.querySelectorAll(".chip").forEach(b => b.setAttribute("aria-pressed", String(b === btn)));
+    grille.querySelectorAll(".card").forEach(c => { c.hidden = f !== "tout" && c.dataset.type !== f; });
+  });
+});
+
+const liste = document.getElementById("marches-liste");
+liste.innerHTML = MARCHES.length
+  ? MARCHES.map(m => `<li><span>${m.lieu}</span><span>${m.quand}</span></li>`).join("")
+  : `<li><span>Lieux et horaires</span><span>sur Instagram</span></li>`;
+</script>
+</body>
+</html>
